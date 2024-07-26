@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+.home-page {
+  background-color: #fff6e9;
+  padding-bottom: 9%;
+  margin-left: -8;
+  margin-right: -8;
+}
+.home-page .header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #fc7a23;
+  margin: -8;
+  font-family: Josefin sans;
+  font-weight: bold;
+  padding: 16;
+}
+.home-page .header a {
+  text-decoration: none;
+  color: black;
+}
+.home-page .header #header-title {
+  font-family: Josefin sans;
+  font-size: 30;
+  margin-left: 75;
+}
+.home-page .header .header-nav {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.home-page .header .header-nav .header-nav-link {
+  font-size: 18;
+  margin-left: 50;
+  margin-right: 50;
+  cursor: pointer;
+}
+.home-page #home-title {
+  font-size: 63;
+  font-family: Josefin sans;
+  text-align: left;
+  margin: 0 175;
+}
+.home-page .home-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  align-items: start;
+}
+.home-page .home-container .home-sub-container #home-register button {
+  font-size: 24;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #000f48;
+  color: white;
+  padding: 20 35;
+  cursor: pointer;
+}
+.home-page .home-container .home-sub-container #home-subtext {
+  font-size: 22;
+  font-family: Josefin sans;
+  font-style: italic;
+  text-align: left;
+  line-height: 1.25;
+}
+.home-page .home-container .home-image {
+  transform: scale(0.6);
+  margin-bottom: -100;
+  margin-top: -150;
+  margin-left: 180;
+}
+
+.HindiLetter {
+  height: 500;
+}
+
+.page {
+  font-family: Josefin sans;
+  padding: 55 175;
+  margin-left: -8;
+  margin-right: -8;
+  background-color: #fc7a23;
+}
+.page .heading {
+  font-size: 50;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.page .text {
+  font-size: 25;
+}
+
+.about-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-group #about-description {
+  width: 53%;
+  font-size: 23;
+  font-weight: 450;
+  word-spacing: 1.5;
+  line-height: 1.3;
+}
+.about-group .about-img {
+  width: 500px;
+  border-radius: 8px;
+}
+
+#hearfromothers-page {
+  background-color: #fff6e9;
+}
+
+#comments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+#comments .comment {
+  width: 400px;
+  border-radius: 8px;
+  padding: 12 25;
+  margin: 20 30;
+  font-size: 22;
+}
+#comments .comment .comment-text {
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#comments .comment .comment-closing {
+  margin-top: 20px;
+}
+#comments .comment .comment-closing button {
+  float: right;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+#example-page {
+  background-color: #cee741;
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.slider video {
+  width: 100%;
+  display: none;
+  border-radius: 8px;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  padding: 10 15;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.slider .prev {
+  left: 0;
+}
+.slider .next {
+  right: 0;
+}
+
+video.displaySlide {
+  display: block;
+}
+
+#contact-page {
+  background-color: #000f48;
+  color: white;
+  font-weight: 300;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  font-size: 25;
+}
+.contact-container .contact-social-media .contact-facebook {
+  cursor: pointer;
+}
+.contact-container .contact-social-media .contact-instagram {
+  cursor: pointer;
+}
+.contact-container .contact-info {
+  margin: 0 150;
+}
+.header-nav-link:hover {
+  transform: scale(1.02);
+}
+
+#header-title:hover {
+  text-decoration: underline;
+}
+
+#home-register button:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px black;
+  background-color: #0a0a6a;
+}
+
+.comment-closing button:hover {
+  color: #000f48;
+}
+
+.comment:hover {
+  transform: scale(1.01);
+  box-shadow: 7px 7px #000f48;
+  cursor: pointer;
+}
+
+.about-img:hover {
+  box-shadow: 7px 7px #000f48;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
