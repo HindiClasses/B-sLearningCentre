@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     aboutLink.addEventListener("click", () => { 
         const target = document.querySelector("#about-heading");
-        scrollTo(target, 800);
+        scrollTo(target, 550);
 
     });
 
