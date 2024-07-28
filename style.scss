@@ -9,6 +9,33 @@ $color4: #cee741;
 
 // $color4: #004830;
 
+
+
+// General Styles
+.page
+{
+    font-family: $font-family;
+    
+    padding: 55 175;
+    margin-left: -8;
+    margin-right: -8;
+    
+    background-color: $color1;
+    
+    .heading
+    {
+        font-size: 50;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .text
+    {
+        font-size: 25;
+    }
+}
+
+
 //Home Page
 .home-page {
     
@@ -124,70 +151,102 @@ $color4: #cee741;
     
         .home-image
         {
+            // background-color: #000f48;
             margin-right: 70;
         }
     }
 }
 
-@media screen and not (min-width: 400px) // its an phone
+@media screen and not (min-width: 900px) // Ipad
 {
-    #home-title
-    {   
-        background-color: #482300;
+   #home-title
+   {
+        margin-left: 0 !important; margin-right: 0 !important;
+        text-align: center !important;
+        font-size: 30 !important;
+   }
+
+   .home-sub-container
+   {
         text-align: center;
-        margin-bottom: 95px !important;
-        font-size: 45px;
-        
+
+        #home-subtext { text-align: center !important; }
+   }
+
+   .page
+   {
+        padding: 55 50 !important;
+   }
+
+   .about-group
+   {
+        display: block !important;
+
+        #about-description
+        {
+            width: 100% !important;
+        }
+
+        .about-img
+        {
+            display: none;
+        }
+   }
+   
+
+
+
+}
+
+@media screen and not (min-width: 500px) // Phone
+{
+    .header
+    {
+        #header-title
+        {
+            font-size: 15px !important;
+        }
     }
 
-    #home-register
+    #home-title
     {
-        text-align: center;
+        // background-color: #000f48 !important;
+        font-size: 20 !important;
+
+        padding: 0 20;
     }
+
+   #home-register
+   {
+        button 
+        {
+            font-size: 15px !important;
+        }
+    }
+    .home-container
+    {
+        padding: 10 0;
+    }
+    
     #home-subtext
     {
-        text-align: center;
-    }
-    
-    .home-sub-container
-    {
-        margin-bottom: 125px !important;
-    }
-    .home-page
-    {
-        padding-bottom: 425px;
+        font-size: 14px !important;
+        padding: 0 10px;
     }
 
-    #home-image
+    .home-image
     {
-        // transform: scale(0.2) !important;
+        transform: scale(.8);
+        // background-color: #000f48;
+        margin: 0 75;
     }
 
-
-}
-// General Styles
-.page
-{
-    font-family: $font-family;
-    
-    padding: 55 175;
-    margin-left: -8;
-    margin-right: -8;
-    
-    background-color: $color1;
-    
-    .heading
+    #about-description
     {
-        font-size: 50;
-        font-weight: bold;
-        margin-bottom: 40px;
-    }
-
-    .text
-    {
-        font-size: 25;
+        font-size: 15 !important;
     }
 }
+
 
 // About Page
 .about-group
@@ -218,20 +277,19 @@ $color4: #cee741;
     
 }
 
-@media screen and not (min-width: 400px) 
-{
-    .about-img
-    {
-        display: none;
-    }
-}
 // Hear from others
 
 #hearfromothers-page
 {
     background-color: $color2;
+    padding: 55 35;
 }
 
+#hear-heading
+{
+    padding-left: 80;
+    // background-color: #000f48;
+}
 #comments
 {
     display: flex;
@@ -240,6 +298,8 @@ $color4: #cee741;
     align-items: baseline;
 
     justify-content: center;
+
+    // background-color: #004804;
 
     
    

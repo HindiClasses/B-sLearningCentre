@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+.page {
+  font-family: Josefin sans;
+  padding: 55 175;
+  margin-left: -8;
+  margin-right: -8;
+  background-color: #fc7a23;
+}
+.page .heading {
+  font-size: 50;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.page .text {
+  font-size: 25;
+}
+
 .home-page {
   background-color: #fff6e9;
   padding-bottom: 9%;
@@ -72,42 +88,58 @@
   margin-right: 70;
 }
 
-@media screen and not (min-width: 400px) {
+@media screen and not (min-width: 900px) {
   #home-title {
-    background-color: #482300;
-    text-align: center;
-    margin-bottom: 95px !important;
-    font-size: 45px;
-  }
-  #home-register {
-    text-align: center;
-  }
-  #home-subtext {
-    text-align: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+    font-size: 30 !important;
   }
   .home-sub-container {
-    margin-bottom: 125px !important;
+    text-align: center;
   }
-  .home-page {
-    padding-bottom: 425px;
+  .home-sub-container #home-subtext {
+    text-align: center !important;
+  }
+  .page {
+    padding: 55 50 !important;
+  }
+  .about-group {
+    display: block !important;
+  }
+  .about-group #about-description {
+    width: 100% !important;
+  }
+  .about-group .about-img {
+    display: none;
   }
 }
-.page {
-  font-family: Josefin sans;
-  padding: 55 175;
-  margin-left: -8;
-  margin-right: -8;
-  background-color: #fc7a23;
+@media screen and not (min-width: 500px) {
+  .header #header-title {
+    font-size: 15px !important;
+  }
+  #home-title {
+    font-size: 20 !important;
+    padding: 0 20;
+  }
+  #home-register button {
+    font-size: 15px !important;
+  }
+  .home-container {
+    padding: 10 0;
+  }
+  #home-subtext {
+    font-size: 14px !important;
+    padding: 0 10px;
+  }
+  .home-image {
+    transform: scale(0.8);
+    margin: 0 75;
+  }
+  #about-description {
+    font-size: 15 !important;
+  }
 }
-.page .heading {
-  font-size: 50;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-.page .text {
-  font-size: 25;
-}
-
 .about-group {
   display: flex;
   justify-content: space-evenly;
@@ -126,13 +158,13 @@
   border-radius: 8px;
 }
 
-@media screen and not (min-width: 400px) {
-  .about-img {
-    display: none;
-  }
-}
 #hearfromothers-page {
   background-color: #fff6e9;
+  padding: 55 35;
+}
+
+#hear-heading {
+  padding-left: 80;
 }
 
 #comments {
