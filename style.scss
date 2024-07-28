@@ -16,7 +16,7 @@ $color4: #cee741;
 {
     font-family: $font-family;
     
-    padding: 55 175;
+    padding: 55 75;
     margin-left: -8;
     margin-right: -8;
     
@@ -286,6 +286,7 @@ $color4: #cee741;
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
 
     justify-content: center;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 .page {
   font-family: Josefin sans;
-  padding: 55 175;
+  padding: 55 75;
   margin-left: -8;
   margin-right: -8;
   background-color: #fc7a23;
@@ -167,6 +167,7 @@
 #comments {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
 }
