@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    type();
+
     const aboutLink = document.querySelector("#about");
     
     aboutLink.addEventListener("click", () => { 
@@ -60,54 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     see_less("commentText3", comment3_btn);
                 }
         });
-    
-    
-    // Example Videos
-    
-    const slides = document.querySelectorAll(".slider video");
-    let slideIndex = 0;
-    let intervalId = null;
-
-    document.querySelector(".next").addEventListener("click", nextSlide);
-    document.querySelector(".prev").addEventListener("click", prevSlide);
-
-    initSlider();
-
-    function initSlider()
-    {
-        if (slides.length > 0)
-        {
-            slides[slideIndex].classList.add("displaySlide");
-            // intervalId = setInterval(nextSlide, 5000);
-        }
-    }
-
-    function showSlide(index)
-    {
-        if (index >= slides.length) {
-            slideIndex = 0;
-        }
-        else if (index < 0) {
-            slideIndex = slides.length - 1;
-        }
-
-        slides.forEach(slide => {
-            slide.classList.remove("displaySlide");
-        });
-        slides[slideIndex].classList.add("displaySlide")
-    }
-
-    function prevSlide()
-    {
-        slideIndex--;
-        showSlide(slideIndex);
-    }
-
-    function nextSlide()
-    {
-        slideIndex++;
-        showSlide(slideIndex);
-    }
 
 });
 
@@ -145,3 +99,20 @@ function see_less(commentId, commentBtn)
     
 }
 
+function type()
+{
+    console.log("type");
+    var i = 0;
+    var txt = ' the easy way';
+    var speed = 234;
+
+    typeWriter();
+
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("title").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+}

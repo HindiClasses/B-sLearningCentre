@@ -253,4 +253,10 @@
 .contact-container .contact-info {
   margin: 0 150;
   text-align: center;
+}
+
+.contact-credits {
+  text-align: right;
+  font-size: 14;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

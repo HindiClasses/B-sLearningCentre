@@ -96,6 +96,8 @@ $color4: #cee741;
         font-size: clamp(25px, 3vw, 60px);
         text-align:left;
         margin: 0 175;
+
+        // background-color: #000f48;
     }
 
     .home-container
@@ -415,4 +417,11 @@ $color4: #cee741;
         margin: 0 150;
         text-align: center;
     }
+}
+
+.contact-credits
+{
+    text-align: right;
+    font-size: 14;
+    font-style: italic;
 }
