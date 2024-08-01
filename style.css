@@ -226,6 +226,10 @@
   transform: scale(1.01);
 }
 
+.link {
+  text-align: center;
+}
+
 #contact-page {
   background-color: #000f48;
   color: white;
