@@ -247,8 +247,14 @@
 .contact-container .contact-social-media .contact-facebook {
   cursor: pointer;
 }
+.contact-container .contact-social-media .contact-facebook img {
+  transition: all 0.3s;
+}
 .contact-container .contact-social-media .contact-instagram {
   cursor: pointer;
+}
+.contact-container .contact-social-media .contact-instagram img {
+  transition: all 0.3s;
 }
 .contact-container .contact-info {
   margin: 0 150;
@@ -259,4 +265,12 @@
   text-align: right;
   font-size: 14;
   font-style: italic;
+}
+
+.contact-facebook img:hover {
+  transform: scale(1.08);
+}
+
+.contact-instagram img:hover {
+  transform: scale(1.08);
 }/*# sourceMappingURL=style.css.map */

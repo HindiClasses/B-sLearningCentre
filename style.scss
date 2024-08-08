@@ -403,12 +403,15 @@ $color4: #cee741;
     .contact-social-media
     {
         .contact-facebook
-        {
+        {   
             cursor: pointer;
+            img {transition: all .3s; }
         }
+
         .contact-instagram
         {
             cursor: pointer;
+            img {transition: all .3s; }
         }
     }
 
@@ -424,4 +427,13 @@ $color4: #cee741;
     text-align: right;
     font-size: 14;
     font-style: italic;
+}
+
+.contact-facebook img:hover
+{
+    transform: scale(1.08);
+}
+.contact-instagram img:hover
+{
+    transform: scale(1.08);
 }
